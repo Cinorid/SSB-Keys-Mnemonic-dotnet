@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<RootNamespace>SSB.Keys.Mnemonic.Tests_GUI</RootNamespace>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SSB.Keys.Mnemonic\SSB.Keys.Mnemonic.csproj" />
+	</ItemGroup>
+
+</Project>

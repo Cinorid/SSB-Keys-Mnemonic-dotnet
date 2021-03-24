@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>SSB.Keys.Mnemonic</RootNamespace>
+		<Product>SSB.Keys.Mnemonic</Product>
+		<Version>1.0.0</Version>
+		<Authors>Cinorid (AhmadReza Saghari)</Authors>
+		<Company>Cinorid</Company>
+		<Description>C# (.NET Standard) implementation of the https://github.com/staltz/ssb-keys-mnemonic</Description>
+		<Summary>C# (.NET Standard) implementation of the https://github.com/staltz/ssb-keys-mnemonic</Summary>
+		<Copyright>Copyright © 2021 Cinorid (AhmadReza Saghari)</Copyright>
+		<PackageProjectUrl>https://github.com/Cinorid/SSB-Keys-Mnemonic-dotnet</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<Title>SSB.Keys.Mnemonic</Title>
+		<PackageId>SSB.Keys.Mnemonic</PackageId>
+		<PackageTags>SSB.Keys.Mnemonic</PackageTags>
+		<PackageIcon>packageIcon.png</PackageIcon>
+		<PackageIconFullPath>$(MSBuildThisFileDirectory)packageIcon.png</PackageIconFullPath>
+		<AssemblyName>SSB.Keys.Mnemonic</AssemblyName>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="README.md" />
+		<None Include="..\LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+		<None Include="$(PackageIconFullPath)" Pack="true" PackagePath="\" />
+		<PackageReference Include="BIP39-NET" Version="1.0.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="Rebex.Elliptic.Ed25519" Version="1.2.1" />
+		<PackageReference Include="SSB.Keys" Version="1.0.1" />
+	</ItemGroup>
+
+</Project>
