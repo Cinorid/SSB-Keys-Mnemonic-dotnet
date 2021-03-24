@@ -1,0 +1,30 @@
+﻿<Window x:Class="SSB.Keys.Mnemonic.Tests_GUI.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:SSB.Keys.Mnemonic.Tests_GUI"
+		mc:Ignorable="d"
+		Title="SSB Keys to Mnemonic Converter" Height="450" Width="800">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="auto"/>
+		</Grid.RowDefinitions>
+		<GroupBox Grid.Row="0" Header="Keys">
+			<TextBox x:Name="txtKeys" AcceptsReturn="True" TextWrapping="Wrap"/>
+		</GroupBox>
+		<GroupBox Grid.Row="1" Header="Words">
+			<TextBox x:Name="txtWords" AcceptsReturn="True" TextWrapping="Wrap"/>
+		</GroupBox>
+		<Grid Grid.Row="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1*"/>
+				<ColumnDefinition Width="1*"/>
+			</Grid.ColumnDefinitions>
+			<Button Content="Convert Keys To Words" Grid.Column="0" Margin="5" Click="ButtonKeysToWords_Click"/>
+			<Button Content="Convert Words To Keys" Grid.Column="1" Margin="5" Click="ButtonWordsToKeys_Click"/>
+		</Grid>
+	</Grid>
+</Window>
