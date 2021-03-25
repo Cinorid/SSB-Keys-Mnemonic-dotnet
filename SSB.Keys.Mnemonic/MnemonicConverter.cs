@@ -4,10 +4,13 @@ using Bitcoin.BIP39;
 
 namespace SSB.Keys.Mnemonic
 {
+	/// <summary>
+	/// Module that converts from/to SSB keys and BIP39 recovery phrase
+	/// </summary>
 	public class MnemonicConverter
 	{
 		/// <summary>
-		/// 
+		/// Convert SSB.Keys to recovery phrase
 		/// </summary>
 		/// <param name="keys"></param>
 		/// <returns></returns>
@@ -33,6 +36,11 @@ namespace SSB.Keys.Mnemonic
 			return words;
 		}
 
+		/// <summary>
+		/// Convert recovery phrase to SSB.Keys
+		/// </summary>
+		/// <param name="words"></param>
+		/// <returns></returns>
 		public Keys WordsToKeys(string words)
 		{
 			var wordArr = words.Trim().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
