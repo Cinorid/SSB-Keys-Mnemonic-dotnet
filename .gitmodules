@@ -1,0 +1,3 @@
+[submodule "SSB-Keys-dotnet"]
+	path = SSB-Keys-dotnet
+	url = https://github.com/Cinorid/SSB-Keys-dotnet.git
