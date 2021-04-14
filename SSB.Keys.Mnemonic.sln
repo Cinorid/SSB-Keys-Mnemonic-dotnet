@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31025.218
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSB.Keys.Mnemonic", "SSB.Keys.Mnemonic\SSB.Keys.Mnemonic.csproj", "{484BD796-CB3B-4745-AA5A-CA9C405CB224}"
 EndProject
@@ -14,8 +14,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{D12E4FE3-4A73-40BD-9EEE-30DC1FD52175}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests-GUI", "Tests-GUI\Tests-GUI.csproj", "{C3C05973-6127-43DF-8EFA-E7EC89E8E5A4}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSB.Keys", "SSB-Keys-dotnet\SSB.Keys\SSB.Keys.csproj", "{682F44F0-6659-442F-BD0C-DB8DF29E3993}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{C3C05973-6127-43DF-8EFA-E7EC89E8E5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3C05973-6127-43DF-8EFA-E7EC89E8E5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3C05973-6127-43DF-8EFA-E7EC89E8E5A4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{682F44F0-6659-442F-BD0C-DB8DF29E3993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{682F44F0-6659-442F-BD0C-DB8DF29E3993}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{682F44F0-6659-442F-BD0C-DB8DF29E3993}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{682F44F0-6659-442F-BD0C-DB8DF29E3993}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
