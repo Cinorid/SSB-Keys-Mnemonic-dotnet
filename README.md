@@ -4,18 +4,38 @@ Module that converts from/to SSB keys and [BIP39](https://github.com/bitcoin/bip
 
 C# (.NET Standard) implementation of the https://github.com/staltz/ssb-keys-mnemonic
 
-## Usage
-```c#
-using SSB.Keys.Mnemonic;
-```
-
 ## Donate
 If you like this little project and find it worthy of a donation, send some coins to:<br/>
 bitcoin: 3GSpoWVTwjbt9BGiivZmsWe9DBkTR87Wpf<br/>
 ethereum: 0xF0942E600B976F343DE6660C53392D5a37A7ca12<br/>
 monero: 4Jy22AgYpZEQ9D4yVrm8cD9MX5hPqycQmR7vA96r9LP18gASE8nFYGSLd7fZ4LZQChLTwFPZDbd2hDVTrLnaVXCcNYHc6U9jES2JErc8Uu<br/>
 
-### string KeysToWords(Keys keys)
+### Usage
+### CLI
+Usage:  SSB.Keys.Mnemonic.CLI [OPERAND]...
+
+Secret file conversion, converting, and formatting according to the operands.
+
+  -m=MODE       convertion mode, can be: 's2w' or 'w2s'
+    -m=s2w      secret to words
+    -m=w2s      words to secret
+
+  -s="secret"   secret file content from stdin
+  -w="words"    words list from stdin
+  -sf=FILE      secret FILE name instead of stdin
+  -wf=FILE      words FILE name instead of stdout
+
+Samples:
+1.      dotnet SSB.Keys.Mnemonic.CLI.dll -m=s2w -sf=C:\Users\user\.ssb\secret
+2.      dotnet SSB.Keys.Mnemonic.CLI.dll -m=s2w -sf=C:\Users\user\.ssb\secret -wf=words.txt
+3.      dotnet SSB.Keys.Mnemonic.CLI.dll -m=w2s -w=C:\Users\user\.ssb\secret -sf=secret.txt
+4.      dotnet SSB.Keys.Mnemonic.CLI.dll -m=w2s -w="body hair useful camp warm into cause riot two bamboo kick educate dinosaur advice seed type crisp where guilt avocado output rely lunch goddess" -sf=secret.txt
+
+### API
+```c#
+using SSB.Keys.Mnemonic;
+```
+## string KeysToWords(Keys keys)
 
 ```c#
 var mnemonic = new MnemonicConverter();
@@ -35,7 +55,7 @@ body hair useful camp warm into cause riot two bamboo kick educate dinosaur advi
 */
 ```
 
-### Keys WordsToKeys(string words)
+## Keys WordsToKeys(string words)
 
 ```c#
 var mnemonic = new MnemonicConverter();
