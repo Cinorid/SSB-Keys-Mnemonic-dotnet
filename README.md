@@ -10,8 +10,8 @@ bitcoin: 3GSpoWVTwjbt9BGiivZmsWe9DBkTR87Wpf<br/>
 ethereum: 0xF0942E600B976F343DE6660C53392D5a37A7ca12<br/>
 monero: 4Jy22AgYpZEQ9D4yVrm8cD9MX5hPqycQmR7vA96r9LP18gASE8nFYGSLd7fZ4LZQChLTwFPZDbd2hDVTrLnaVXCcNYHc6U9jES2JErc8Uu<br/>
 
-### Usage
-### CLI
+## Usage
+## CLI
 Usage:  SSB.Keys.Mnemonic.CLI [OPERAND]...
 
 Secret file conversion, converting, and formatting according to the operands.
@@ -31,11 +31,11 @@ Samples:
 3.      dotnet SSB.Keys.Mnemonic.CLI.dll -m=w2s -w=C:\Users\user\.ssb\secret -sf=secret.txt
 4.      dotnet SSB.Keys.Mnemonic.CLI.dll -m=w2s -w="body hair useful camp warm into cause riot two bamboo kick educate dinosaur advice seed type crisp where guilt avocado output rely lunch goddess" -sf=secret.txt
 
-### API
+## API
 ```c#
 using SSB.Keys.Mnemonic;
 ```
-## string KeysToWords(Keys keys)
+### string KeysToWords(Keys keys)
 
 ```c#
 var mnemonic = new MnemonicConverter();
@@ -55,7 +55,7 @@ body hair useful camp warm into cause riot two bamboo kick educate dinosaur advi
 */
 ```
 
-## Keys WordsToKeys(string words)
+### Keys WordsToKeys(string words)
 
 ```c#
 var mnemonic = new MnemonicConverter();
