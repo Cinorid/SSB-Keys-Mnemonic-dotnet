@@ -5,6 +5,7 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<RootNamespace>SSB.Keys.Mnemonic.Tests_GUI</RootNamespace>
 		<UseWPF>true</UseWPF>
+		<StartupObject>SSB.Keys.Mnemonic.Tests_GUI.App</StartupObject>
 	</PropertyGroup>
 
 	<ItemGroup>
