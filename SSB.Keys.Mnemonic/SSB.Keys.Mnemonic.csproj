@@ -31,7 +31,7 @@
 		<None Include="..\LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
 		<None Include="$(PackageIconFullPath)" Pack="true" PackagePath="\" />
 		<PackageReference Include="BIP39-NET" Version="1.0.1" />
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
 		<PackageReference Include="Rebex.Elliptic.Ed25519" Version="1.2.1" />
 		<PackageReference Include="SSB.Keys" Version="2.0.0" />
 	</ItemGroup>
